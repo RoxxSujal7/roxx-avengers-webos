@@ -4,3 +4,19 @@ site/
 .venv/
 node_modules/
 .lint-pages/
+
+# Media assets (Keep user's local Marvel intro video strictly excluded)
+*.mp4
+*.mkv
+*.avi
+*.mov
+/media/
+/intro/
+
+# Local credentials & sensitive logs
+.env
+.env.*
+*.pem
+*.key
+cytv-diagnose.txt
+

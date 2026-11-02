@@ -7,7 +7,25 @@
 
 <p align="center"><img src="assets/icon.svg" width="128" alt="CleanYourTV icon"></p>
 
-# CleanYourTV for LG webOS
+# ROXX Avengers Edition — webOS Launcher
+**STARK INDUSTRIES × ROXX**
+
+A lightweight, minimalist, Marvel-inspired smart launcher for LG webOS TVs (Target: LG 43UR7550PSC, webOS 25).
+Built on the open-source foundation of [CleanYourTV](https://github.com/lasharor/cleanyourtv-WebOS).
+
+> [!NOTE]
+> **Attribution & Upstream**: This project is derived from CleanYourTV by `lasharor` under the MIT License.
+> All original upstream features—including live TV, input picker, theme engine, and non-destructive RAM mounts—are preserved.
+
+### ROXX Avengers Features
+- **Design System**: Matte black surfaces (`#08090B`), charcoal cards (`#12151B`), Stark red highlights (`#D12727`), and clean 10-foot TV typography.
+- **ROXX Control Center**: Remote-first header pill (`rows[0]`) accessible via **Arrow Up** from the App Dock, providing quick theme toggles, input selection, and system telemetry.
+- **Fail-Safe Startup**: Resilient architecture designed to fail safe to the Home screen under any hardware or network uncertainty.
+- **Non-Destructive Userland Operation**: Runs safely in userland memory mounts; LG system partitions and firmware are never modified.
+
+---
+
+## Original CleanYourTV Foundation
 
 A fast home screen for rooted LG webOS TVs, with Live TV from your own playlist, an Inputs list on the Input key,
 picture notifications, optional on-device voice recognition and an optional debloat of LG's ads and telemetry.

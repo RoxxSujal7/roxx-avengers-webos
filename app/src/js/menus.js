@@ -1133,3 +1133,64 @@ function hiddenMenu() {
     );
   });
 }
+
+/* ---------- ROXX Control Center ---------- */
+function roxxMenu() {
+  openMenu('ROXX Control Center', [
+    {
+      label: 'Brand',
+      note: 'STARK INDUSTRIES × ROXX',
+    },
+    {
+      label: 'Theme: ROXX Avengers',
+      stay: true,
+      fn: function () {
+        themeCall('/api/theme/set', { id: 'roxx-avengers' }, function () {
+          toast(t('Theme applied: ROXX Avengers'));
+          closeMenus();
+        });
+      },
+    },
+    {
+      label: 'Theme: OLED Black',
+      stay: true,
+      fn: function () {
+        themeCall('/api/theme/set', { id: 'oled' }, function () {
+          toast(t('Theme applied: OLED Black'));
+          closeMenus();
+        });
+      },
+    },
+    {
+      label: 'All Themes...',
+      fn: function () {
+        themeMenu();
+      },
+    },
+    { sep: true },
+    {
+      label: 'Inputs...',
+      fn: function () {
+        closeMenus();
+        inputsMenu();
+      },
+    },
+    {
+      label: 'Live TV',
+      fn: function () {
+        closeMenus();
+        LIVE.enter();
+      },
+    },
+    { sep: true },
+    {
+      label: 'Telemetry',
+      note: 'Target: LG 43UR7550PSC · webOS 25',
+    },
+    {
+      label: 'Intro Status',
+      note: 'Cold-Boot Guard: Armed (Fail-Safe to Home)',
+    },
+  ]);
+}
+

@@ -732,7 +732,7 @@ function languages() {
   var out = [{ code: 'en', name: 'English', pct: 100 }];
   for (var c in I18N) if (c !== 'en') out.push({ code: c, name: I18N[c]._name || c, pct: I18N[c]._pct || 0 });
   return out;
-}
+}
 /* ---------- what the launcher's script gave Live TV, for the page of the iptv add-on ----------
    This page is shown by the launcher in a frame (app/src/js/addons.js, LIVE in live.js there). The launcher tells it what to do with
    messages ({cytv: 'init' | 'enter' | 'guide' | 'resume' | 'key'}); the page tells the launcher to close it ({cytvAddon: 'close'}). */

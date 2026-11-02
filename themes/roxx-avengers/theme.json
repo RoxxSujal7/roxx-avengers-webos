@@ -1,0 +1,23 @@
+{
+  "name": "ROXX Avengers",
+  "author": "STARK INDUSTRIES × ROXX",
+  "description": "Minimalist matte black and charcoal surfaces with Stark red accents.",
+  "colors": {
+    "night": "#08090b",
+    "panel": "#12151b",
+    "ink": "#f5f6f8",
+    "accent": "#d12727",
+    "focus": "#d12727",
+    "pill": "#ffffff"
+  },
+  "surface": {
+    "pillAlpha": 0.1,
+    "pillRing": 0.12,
+    "pillRadius": 24,
+    "menuAlpha": 0.98,
+    "rowRadius": 20
+  },
+  "effects": {
+    "glow": 0
+  }
+}

@@ -99,7 +99,7 @@ function build(src) {
     .replace(/\n$/, '')
     .split('\n')
     .map(line => {
-      const m = /^@include (\S+)$/.exec(line);
+      const m = /^@include (\S+)\r?$/.exec(line);
       if (!m) return line;
       const f = path.join(dir, m[1]);
       if (f.indexOf(dir + path.sep) !== 0 || !fs.existsSync(f)) throw new Error(src + '/index.html includes a missing file: ' + m[1]);

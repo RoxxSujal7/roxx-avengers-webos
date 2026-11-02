@@ -30,7 +30,10 @@ function rebuild(animate) {
   if (!moving) {
     bar.textContent = '';
     tb = shownBar()
-      .concat([{ label: 'Customise', icon: 'edit', action: 'customize', fixed: true }])
+      .concat([
+        { label: 'ROXX', icon: 'roxx', action: 'roxx', fixed: true },
+        { label: 'Customise', icon: 'edit', action: 'customize', fixed: true },
+      ])
       .map(function (o) {
         var p = document.createElement('div');
         p.className = 'pill';
